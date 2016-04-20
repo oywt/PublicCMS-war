@@ -1,21 +1,14 @@
 #PublicCMS 2016
 
-请注意这是个还未完善的版本，请暂时不要用于正式项目，请等待正式发布的版本。该版本仅用于技术人员测试、学习与完善PublicCMS新版本
-
-您需要修改 war/WEB-INF/classes/config/properties/ 目录下以下两个配置文件
-dbconfig.properties
-修改jdbc.url,jdbc.username,jdbc.password的值为您的publiccms数据库连接
-other.properties
-修改site.filePath的值为您的publiccms数据目录所在的绝对路径
-
-如果您是初次下载：
-首先在您的MYSQL数据库中创建数据库：public_cms
+在您的MYSQL数据库中创建数据库：public_cms
 字符集选择：utf8_general_ci
 然后导入database/Mysql Database Init文件到您刚刚新建的数据中
 
-如果您已经使用了旧版本的PublicCMS 2016
-请按照database/Mysql Database Change Log数据库修改记录时间线修改您的数据库到最新版本
-如果您不想保留您自己的数据，还可以删除已有的所有表，然后导出database/Mysql Database Init重新初始化数据库
+您需要修改 war/WEB-INF/classes/config/properties/ 目录下以下两个配置文件：
+dbconfig.properties
+	修改jdbc.url,jdbc.username,jdbc.password的值为您的publiccms数据库连接
+other.properties
+	修改site.filePath的值为您的publiccms数据目录所在的绝对路径
 
 新增功能：
 
