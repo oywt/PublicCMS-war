@@ -18,6 +18,10 @@ https://github.com/sanluan/PublicCMS-lib
 
 https://git.oschina.net/sanluan/PublicCMS-lib
 
+##授权
+
+该软件永久开源免费(MIT 授权协议)
+
 ##使用帮助
 
 1. 在您的MYSQL数据库中创建数据库：public_cms，字符集选择：utf8_general_ci
@@ -26,8 +30,16 @@ https://git.oschina.net/sanluan/PublicCMS-lib
  修改WEB-INF/classes/config/properties/dbconfig.properties文件中jdbc.url,jdbc.username,jdbc.password的值为您的publiccms数据库连接
  修改WEB-INF/classes/config/properties/other.properties文件中site.filePath的值为您的publiccms数据目录所在的绝对路径
 
- ##更新记录
-V2016.0828更新：
+##演示
+
+* 演示站点：http://www.publiccms.com/
+* 动态站点演示：http://cms.publiccms.com/
+* 后台演示：http://cms.publiccms.com/admin/ 账号/密码 test/test
+* 接口演示：http://cms.publiccms.com/interface.html
+
+##更新记录
+
+###V2016.0828更新：
 
 框架升级:
 
@@ -85,7 +97,14 @@ BUG修复:
 感谢@枫之舞 为CMS改造的UI界面(此版本只参考了部分修改)
 感谢@日照-ゞkong.“ @隔壁邻居王先生 @暗亮之间 为Public CMS贡献文档
 
-V2016.0423更新
+###V2016.0510更新：
+
+1. 动态站点新增分类保存500错误bug修复
+1. 分类类型不能删除bug修复
+1. 新增分类推荐，页面推荐
+1. RenderHandler新增char类型处理
+
+###V2016.0423更新
 
 1. 前台站点增加登陆注册功能，友情链接提交功能
 
