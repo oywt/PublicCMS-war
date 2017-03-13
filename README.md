@@ -1,18 +1,19 @@
-#PublicCMS 2016
+#PublicCMS 2017
 
 ##获取可运行程序
 
-http://git.oschina.net/sanluan/PublicCMS-war
+https://git.oschina.net/sanluan/PublicCMS-war
 https://github.com/sanluan/PublicCMS-war
 
 ##获取稳定版源码
 
-http://git.oschina.net/sanluan/PublicCMS
+https://git.oschina.net/sanluan/PublicCMS
 https://github.com/sanluan/PublicCMS
+https://code.csdn.net/zyyy358/publiccms/
 
 ##参与研发(预览版)
 
-http://git.oschina.net/sanluan/PublicCMS-preview
+https://git.oschina.net/sanluan/PublicCMS-preview
 https://github.com/sanluan/PublicCMS-preview
 
 ##相关下载及文档(知识库)
@@ -24,77 +25,105 @@ https://git.oschina.net/sanluan/PublicCMS-lib
 
 该软件永久开源免费(MIT 授权协议)
 
-##使用帮助
+##目录说明
 
-1. 在您的MYSQL数据库中创建数据库：public_cms，字符集选择：utf8_general_ci
-1. 导入database/Mysql Database Init文件到数据库
-1. 修改配置
- 修改WEB-INF/classes/config/properties/dbconfig.properties文件中jdbc.url,jdbc.username,jdbc.password的值为您的publiccms数据库连接
- 修改WEB-INF/classes/config/properties/other.properties文件中site.filePath的值为您的publiccms数据目录所在的绝对路径
+* data\publiccms	PublicCMS数据目录
+* doc	PublicCMS帮助文档
+* war	PublicCMS可执行程序
 
 ##演示
 
 * 演示站点：http://www.publiccms.com/
 * 动态站点演示：http://cms.publiccms.com/
-* 后台演示：http://cms.publiccms.com/admin/ 账号/密码 test/test
-* 接口演示：http://cms.publiccms.com/interface.html
+* 后台演示：https://cms.publiccms.com/admin/ 账号/密码 test/test
+* 接口演示：https://cms.publiccms.com/interface.html
 
 ##更新记录
 
-###V2016.0828更新：
-
-框架升级:
-
-1. Spring Framework升级到4.3.2
-1. Hibernate Search升级到5.5.4
-1. Hibernate升级到5.1.1
-1. FreeMarker升级到2.3.25-incubating
-1. Jackson升级到2.8.1
+###2017预览版更新
 
 BUG修复:
 
-1. 分类扩展字段展示错误修复
-1. 内容推送到页面时标题乱码修复
-1. 域名管理错别字修改
-1. Nginx建议配置页面错误修复
-1. 多数据源支持增加复位操作
-1. 任务计划脚本修改路径错误修复
-1. 域名绑定子目录时元数据路径错误修复
-1. 模板编辑推荐位页面不能选择使用推荐位错误修复
-1. 用户名密码等去空格处理
-1. FTP服务LIST命令报文修复
-1. 前台站点数字超千位输出错误
+1. 内容推荐bug
+1. 用户扩展字段类型bug
+1. 用户添加bug
+1. 部分敏感数据接口增加授权限制
+1. 扩展字段为空时 显示全部扩展字段bug
+1. 推荐位前台提交表单匿名提交空指针错误
+1. 分类管理点击修改时提示需要选择信息bug
+1. 管理后台新增用户、修改用户提示密码不一致bug
+1. 推荐位内容翻页bug
+1. 删除任务计划时错删模板文件bug
+
+框架升级:
+
+1. Spring Framework升级到4.3.7
+1. Hibernate Search升级到5.5.6
+1. Hibernate升级到5.1.3
+1. Jackson升级到2.8.6
+1. mysql-connector-java升级到5.1.40
+1. 源码与gralde,maven配置分离
+1. 新增gradle、maven插件：maven-eclipse，maven-idea，gradle-idea
 
 新增功能:
 
-1. 新增配置中心
-1. 将文件上传日志拆分为独立的表
-1. 增加集群管理，任务计划集群环境处理
-1. 后台增加JSP视图解决方案
-1. 增加管理站点后台Public CMS新版本提示
-1. 搜索词统计
-1. 分类增加外链类型
-1. 模块图标拆分为单独字段，图标直接选择使用
-1. 增加日志配置文件
+1. 新增免重启的数据库配置、初始化、升级引导程序
+1. 新增静态文件管理
+1. 新增配置管理
+1. 新增站点默认设置
+1. 新增部署错误提示
+1. 新增工程内置默认动态站点
+1. 新增多站点静态文件支持
+1. 新增域名格式提示
+1. 新增通配域名设置
+1. 新增分类是否包含子分类内容设置
+1. 新增模块是否作为菜单展示设置
+1. 新增分词器设置、默认中文分词器
+1. 新增关键词处理函数
+1. 新增UserAgeent获取指令，UserAgent解析函数
+1. 新增模板demo
+1. 新增模板制作帮助页面
+1. 新增推荐位异步渲染支持
+1. 新增多条内容、分类、推荐位扩展字段获取函数
+1. 新增接口授权功能
 
 其他提升:
 
-1. 后台当前站点信息提示
-1. 后台工作台取消框架版本信息显示
-1. 常量引用改完get方法方式
-1. 接口改完restfull风格
-1. 取消普通接口鉴权
-1. 接口测试页面合并为一个，增加需要鉴权等提示
-1. 取消文件列表缓存
-1. getPageDataAttribute改为getPlaceAttribute
-1. 将内容、用户、标签等数据ID改为long存储
-1. 后台模板安全性提升
-1. UI修改
-1. 动态模板改完默认不允许访问
-1. 动态模板可使用任何后缀
+1. 新增Spring Boot启动方式支持
+1. 持久层增加Mybatis
+1. 新增Hibernate Redis缓存组件
+1. 重构内存缓存、增加redis缓存支持
+1. 取消大部分匿名类写法
+1. 增加内容扩展字段类型
+1. 将方法内可复用变量提升为类静态变量
+1. 配置中心登陆注册设置合并
+1. 邮件发送改为线程池执行发送任务
+1. 域名取消端口区分
+1. 模板默认所有输出进行HTML转义
+1. 关联关系表取消自增主键改为联合主键
+1. 界面修改，LOGO修改
+1. 模型由数据库存储改为文件存储
+1. 简化站点配置，站点取消资源站点属性
+1. 配置文件结构调整
+1. 优化推荐位输出
+1. 优化jsonp支持，安全性提升
+1. 接口测试页面美化
+1. 指令自定义名称支持
+1. 优化配置文件结构及路径
+
+模板升级所需修改：
+
+1. 需要以HTML输出的字段需要加 ?no_esc
+1. 取消所有?html内置函数调用
+1. 将数据目录中resource目录下所有文件移动到web目录下，将模板中所有site.resourcePath改为site.sitePath
+
+数据库升级所需修改：
+
+1. 将配置文件中cms.autoInstall设置为true,启动项目后访问首页，进入启动引导程序，然后选择升级数据库
 
 鸣谢：
 
-感谢@深圳-final @日照-ゞkong.“ @辉 @隔壁邻居王先生 等群友们热心提出产品的BUG及改进建议
-感谢@枫之舞 为CMS改造的UI界面(此版本只参考了部分修改)
-感谢@日照-ゞkong.“ @隔壁邻居王先生 @暗亮之间 为Public CMS贡献文档
+感谢 心路(xinlu) 提交的代码：Mybatis代码自动生成工具
+感谢 Alex.MAO 提交的BUG：添加域名bug，分类修改页面选择内容路径bug
+感谢 JARVIS 提交的BUG：分类页面内容模板路径赋值bug
+感谢 firework 提交的BUG：推荐位模板编辑页面不能使用网站文件
