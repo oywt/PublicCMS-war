@@ -1,5 +1,11 @@
 #PublicCMS 2017
 
+<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=8a633f84fb2475068182d3c447319977faca6a14dc3acf8017a160d65962a175"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="Public CMS" title="Public CMS"/></a>
+
+##简介
+
+PublicCMS是采用2017年最新主流技术开发的免费开源JAVACMS系统。商用免费，架构科学。无需任何数据库优化，即可支持上千万数据；支持全站静态化，动态页面缓存，SSI，0xml配置，扩展指令自动加载等为您快速建站，建设大规模站点提供强大驱动，也是企业级项目产品原型的良好选择。
+
 ##获取可运行程序
 
 https://git.oschina.net/sanluan/PublicCMS-war
@@ -9,7 +15,7 @@ https://github.com/sanluan/PublicCMS-war
 
 https://git.oschina.net/sanluan/PublicCMS
 https://github.com/sanluan/PublicCMS
-https://code.csdn.net/zyyy358/publiccms/
+https://code.csdn.net/zyyy358/publiccms
 
 ##参与研发(预览版)
 
