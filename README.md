@@ -1,10 +1,10 @@
 #PublicCMS 2017
 
-<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=8a633f84fb2475068182d3c447319977faca6a14dc3acf8017a160d65962a175"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="Public CMS" title="Public CMS"/></a>
+<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=89ffe8cd3abc04f6794965a330b0a278fdbc31f53e46fd5ee1c4f54ed43a6b28"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="Public CMS-开源JAVACMS 1群" title="Public CMS-开源JAVACMS 1群"></a> <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=088c921c4eb74328eef0192bac1e63c7228eb31b0524a373d40cdd907ddd2d3c"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="Public CMS-开源JAVACMS 2群" title="Public CMS-开源JAVACMS 2群"></a>
 
 ##简介
 
-PublicCMS是采用2017年最新主流技术开发的免费开源JAVACMS系统。商用免费，架构科学。无需任何数据库优化，即可支持上千万数据；支持全站静态化，动态页面缓存，SSI，0xml配置，扩展指令自动加载等为您快速建站，建设大规模站点提供强大驱动，也是企业级项目产品原型的良好选择。
+PublicCMS是采用2017年最新主流技术开发的免费开源JAVACMS系统。架构科学，轻松支持上千万数据、千万PV；支持全站静态化，SSI，动态页面局部静态化等为您快速建站，建设大规模站点提供强大驱动，也是企业级项目产品原型的良好选择。
 
 ##获取可运行程序
 
@@ -37,16 +37,34 @@ https://git.oschina.net/sanluan/PublicCMS-lib
 * doc	PublicCMS帮助文档
 * war	PublicCMS可执行程序
 
+##部署运行
+
+* 根据文档部署工程
+* 数据脚本内置管理员账号admin，密码admin
+
 ##演示
 
-* 演示站点：http://www.publiccms.com/
-* 动态站点演示：http://cms.publiccms.com/
-* 后台演示：https://cms.publiccms.com/admin/ 账号/密码 test/test
+* 演示站点：https://www.publiccms.com/
+* 后台演示：https://cms.publiccms.com/admin/ 演示账号/密码 test/test
 * 接口演示：https://cms.publiccms.com/interface.html
 
 ##更新记录
 
-###2017预览版更新
+###2017.0408
+
+BUG修复:
+
+1. CMS部署路径有空格时配置错误
+1. 导入数据库脚本乱码
+1. 内容列表没有子内容模型新建按钮
+
+新增功能:
+
+1. 前台推荐位投稿管理
+1. 内容投稿
+1. 内容投稿模板帮助
+
+###V2017.0318更新：
 
 BUG修复:
 
