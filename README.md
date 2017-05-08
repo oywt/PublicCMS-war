@@ -35,7 +35,7 @@ https://git.oschina.net/sanluan/PublicCMS-lib
 
 * data\publiccms	PublicCMS数据目录
 * doc	PublicCMS帮助文档
-* war	PublicCMS可执行程序
+* publiccms	PublicCMS可执行程序
 
 ## 部署运行
 
